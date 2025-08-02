@@ -3,3 +3,6 @@ bs4
 instaloader
 rich
 distro
+flask
+qrcode
+pillow
